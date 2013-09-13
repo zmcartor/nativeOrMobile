@@ -1,10 +1,19 @@
 $(function(){
-  // need to delegate but works...
-var currentQuestion = 0;
-$('button').click(function(e){
+  var currentQuestion = 0,
+      questionCount = $('ul#questionList li').length || 0,
+      nativeBucket = [],
+      responsiveBucket = [];
+
+  var computeResult = function(){
+    alert('you should build at Taivara!!');
+  };
+
+$('main').delegate('button','click',function(e){
+  if (currentQuestion === questionCount){
+    computeResult();
+    return;
+  }
   currentQuestion+=1;
-  $('main').empty();
-  $('main').html($('#q'+currentQuestion+'Content').html());
-  console.log(currentQuestion);
+  $('main').hide().empty().html($('#q'+currentQuestion+'Content').html()).fadeIn();
 });
 });
