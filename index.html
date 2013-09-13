@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<title>Native or Responsive?</title>
 	<meta name="description" content="Native or responsive web? Determine which is best for your app">
-	<meta name="author" content="Zach McArtor @zmcartor">
+	<meta name="author" content="@zmcartor">
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -32,43 +32,130 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script type='text/javascript'
+    src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+  <script type='text/javascript' src="js/lescript.js"></script>
 
 <style type='text/css'>
 
 #questionsList {
 	float:left;
-}        
+}
+</style>
 
-</style>             
+<script type='text/template' id='q1Content'>
+  <h1>Budget</h1>
+  <p>
+  If you budget is very tight, mobile responsive sites are typically more
+expensive than full native applications. Going responsive
+will allow your limited budget to hit as many screen sizes as possible.</p>
+		<p>
+			<h3>Is the budget tight?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
 
+<script type='text/template' id='q2Content'>
+  <h1>Content Monitization</h1>
+		<p>Does your company make money by selling content ie - audio/video/text ?
+Native in-app purchases are easier than a full-blown e-commerce website. Native
+devices are specifically designed for the consumption of these types of media.
+Will the app make money by monitization of content ?
+</p>
+		<p>
+			<h3>Making money by charging for content?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q3Content'>
+  <h1>Rich Data Creation</h1>
+		<p>Are you recording movies, video, and shit ?</p>
+		<p>
+			<h3> Doing stuff with data?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q4Content'>
+  <h1>Frequent Updates</h1>
+  <p>Frequent updates can be a pain in the ass for native and could 
+  require approval on some platforms. Are you sure you need this headache?</p>
+		<p>
+			<h3>Frequent updates yo?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q5Content'>
+  <h1>App Purpose</h1>
+		<p>Does the app provide data about a real service, such as used cars,
+    planes or whatever. Or is the application itself the item of value?</p>
+		<p>
+			<h3>Is the app the item for sale ?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q6Content'>
+  <h1></h1>
+		<p></p>
+		<p>
+			<h3> Do you like Coffee ? </h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q7Content'>
+  <h1>Push Notifications?</h1>
+		<p>Push notifications are not available via web (yet). This feature of
+    activly pushing data whether it be a plane ticket or annoucement can only
+    be done via native.</p>
+		<p>
+			<h3>Dependent on push notifications?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q8Content'>
+  <h1>Accessibility</h1>
+		<p>Does app experience depend on being available on as many screens and
+    devices as it can? </p>
+		<p>
+			<h3>Universal accessibility very important?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
 
 </head>
 <body>
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
 	<div class="container">
-	<div class= "two columns" id="questionList">     
+	<div class= "two columns" id="questionList">
 	 <ul>
-	  <li> Question one </li>
-	  <li> Question two </li> 
-	  <li> Question three </li>
-	  <li> Question four </li>
-	  <li> Question five </li>
-	  <li> Question six </li> 
-	  <li> Question seven </li>
-	  <li> Question eight </li>
-	  <li> Question nine </li>
-	  <li> Question ten </li>
-	  <li> Question eleven </li>
-	  <li> Question twelve </li>   
+	  <li id="q1">Budget</li>
+	  <li id="q2">Content</li> 
+	  <li id="q3">Data</li>
+	  <li id="q4">Updates</li>
+	  <li id="q5">Purpose</li>
+	  <li id="q6">Notify</li>
+	  <li id="q7">Product</li>
+	  <li id="q8">Accessibility</li>
 	  </ul>
-	 </div>   
+	 </div>
 	
 	
-	<div class = "twelve columns offset-by-one" id="questionContent">
+	<main class = "twelve columns offset-by-one" id="questionContent">
 		
 		<h1>How are you doing?</h1>
 		<p> Hopefully you are doing really well. It's important to drink lots of coffee and stuff. Coffee is good for you, but can
@@ -87,7 +174,7 @@
 		</p>   	   
 	</div>
 
-	</div><!-- container -->
+	</main><!-- container -->
 
 
 <!-- End Document
