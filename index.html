@@ -41,38 +41,40 @@
 #questionsList {
 	float:left;
 }
+
+.activeQuestion {
+  background-color:yellow;
+}
 </style>
 
-<script type='text/template' id='q1Content'>
+<script type='text/template' id='q2Content'>
   <h1>Budget</h1>
   <p>
-  If you budget is very tight, mobile responsive sites are typically more
-expensive than full native applications. Going responsive
-will allow your limited budget to hit as many screen sizes as possible.</p>
+  Going responsive is typically the cheapest way for an application to target
+  as many screens as possible. Native apps require specialized platform skills
+  and are more expensive than responsive web sites. </p>
 		<p>
-			<h3>Is the budget tight?</h3>
-			  <button>NO</button>
-			  <button>YES</button>
-		</p>
-</script>
-
-<script type='text/template' id='q2Content'>
-  <h1>Content Monitization</h1>
-		<p>Does your company make money by selling content ie - audio/video/text ?
-Native in-app purchases are easier than a full-blown e-commerce website. Native
-devices are specifically designed for the consumption of these types of media.
-Will the app make money by monitization of content ?
-</p>
-		<p>
-			<h3>Making money by charging for content?</h3>
+			<h3>Is the budget limited?</h3>
 			  <button>NO</button>
 			  <button>YES</button>
 		</p>
 </script>
 
 <script type='text/template' id='q3Content'>
+  <h1>Content Monitization</h1>
+  <p>Selling digital content and encouraging micro-purchases is a proven way to
+  monitize app engagement. Native in-app purchases are easier to integrate and cheaper to maintain than
+building a full-scale E-commerce system.</p>
+		<p>
+			<h3>Monitizing content ?</h3>
+			  <button>NO</button>
+			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q4Content'>
   <h1>Rich Data Creation</h1>
-		<p>Are you recording movies, video, and shit ?</p>
+		<p>Are you recording movies, video</p>
 		<p>
 			<h3> Doing stuff with data?</h3>
 			  <button>NO</button>
@@ -80,7 +82,7 @@ Will the app make money by monitization of content ?
 		</p>
 </script>
 
-<script type='text/template' id='q4Content'>
+<script type='text/template' id='q5Content'>
   <h1>Frequent Updates</h1>
   <p>Frequent updates can be a pain in the ass for native and could 
   require approval on some platforms. Are you sure you need this headache?</p>
@@ -91,7 +93,7 @@ Will the app make money by monitization of content ?
 		</p>
 </script>
 
-<script type='text/template' id='q5Content'>
+<script type='text/template' id='q6Content'>
   <h1>App Purpose</h1>
 		<p>Does the app provide data about a real service, such as used cars,
     planes or whatever. Or is the application itself the item of value?</p>
@@ -102,17 +104,17 @@ Will the app make money by monitization of content ?
 		</p>
 </script>
 
-<script type='text/template' id='q6Content'>
-  <h1></h1>
-		<p></p>
+<script type='text/template' id='q7Content'>
+  <h1>What is for sale?</h1>
+  <p>Is the app the thing that is for sale?</p>
 		<p>
-			<h3> Do you like Coffee ? </h3>
+			<h3></h3>
 			  <button>NO</button>
 			  <button>YES</button>
 		</p>
 </script>
 
-<script type='text/template' id='q7Content'>
+<script type='text/template' id='q8Content'>
   <h1>Push Notifications?</h1>
 		<p>Push notifications are not available via web (yet). This feature of
     activly pushing data whether it be a plane ticket or annoucement can only
@@ -124,7 +126,7 @@ Will the app make money by monitization of content ?
 		</p>
 </script>
 
-<script type='text/template' id='q8Content'>
+<script type='text/template' id='q9Content'>
   <h1>Accessibility</h1>
 		<p>Does app experience depend on being available on as many screens and
     devices as it can? </p>
@@ -132,6 +134,14 @@ Will the app make money by monitization of content ?
 			<h3>Universal accessibility very important?</h3>
 			  <button>NO</button>
 			  <button>YES</button>
+		</p>
+</script>
+
+<script type='text/template' id='q10Content'>
+  <h1>What to do?</h1>
+		<p>Good luck! We hope your dev efforts work out!</p>
+		<p>
+			<h3>Thanks for using the tool!</h3>
 		</p>
 </script>
 
@@ -143,21 +153,23 @@ Will the app make money by monitization of content ?
 	<div class="container">
 	<div class= "two columns" >
 	 <ul id='questionList'>
-	  <li id="q1">Budget</li>
-	  <li id="q2">Content</li> 
-	  <li id="q3">Data</li>
-	  <li id="q4">Updates</li>
-	  <li id="q5">Purpose</li>
-	  <li id="q6">Notify</li>
-	  <li id="q7">Product</li>
-	  <li id="q8">Accessibility</li>
+    <li id="q1" class='activeQuestion'>Start</li>
+	  <li id="q2">Budget</li>
+	  <li id="q3">Content</li>
+	  <li id="q4">Data</li>
+	  <li id="q5">Updates</li>
+	  <li id="q6">Purpose</li>
+	  <li id="q7">Notify</li>
+	  <li id="q8">Product</li>
+	  <li id="q9">Accessibility</li>
+    <li id="q10">Result</li>
 	  </ul>
 	 </div>
 	
 	
 	<main class = "twelve columns offset-by-one" id="questionContent">
 		
-		<h1>How are you doing?</h1>
+		<h1>Responsive Web or Native?</h1>
 		<p> Hopefully you are doing really well. It's important to drink lots of coffee and stuff. Coffee is good for you, but can
 			also cause some stomach problems and such.
 			MP3s can totally change the industry in a really interesting way. These are lower quality audio because of the bandwidth constraints.
@@ -167,11 +179,10 @@ Will the app make money by monitization of content ?
 			stuff together and everything will be ok. The Jedi council beliveves in you. Passion trumps money and skills which is a shame but it's what
 			makes us human. To fail is to be human. To human is to fail. To flail is to not swim. </p>
 		 
-		<p>     
-			<h3> Do you like Coffee ? </h3>
-			  <button>NO</button>
-			  <button>YES</button>
-		</p>   	   
+		<p>
+			<h3></h3>
+			  <button>Let's GO</button>
+		</p>
 	</div>
 
 	</main><!-- container -->

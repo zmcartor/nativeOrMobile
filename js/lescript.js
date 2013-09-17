@@ -1,5 +1,5 @@
 $(function(){
-  var currentQuestion = 0,
+  var currentQuestion = 1,
       questionCount = $('ul#questionList li').length || 0,
       nativeBucket = [],
       responsiveBucket = [];
@@ -15,5 +15,8 @@ $('main').delegate('button','click',function(e){
   }
   currentQuestion+=1;
   $('main').hide().empty().html($('#q'+currentQuestion+'Content').html()).fadeIn();
+  $('li.activeQuestion').removeClass('activeQuestion');
+  $('li#q'+currentQuestion).addClass('activeQuestion');
+
 });
 });
