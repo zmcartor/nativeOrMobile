@@ -16,7 +16,7 @@ body {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 button {
@@ -25,7 +25,7 @@ button {
 }
 
 .buttons button:first-child{
-  margin-right:20px;
+  margin-right:22px;
 }
 
 body {
