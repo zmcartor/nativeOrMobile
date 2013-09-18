@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
+  
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,104 +38,128 @@
     src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
   <script type='text/javascript' src="js/lescript.js"></script>
 
-<style type='text/css'>
-
-#questionsList {
-	float:left;
-}
-
-.activeQuestion {
-  background-color:yellow;
-}
-</style>
-
 <script type='text/template' id='q2Content'>
   <h1>Budget</h1>
   <p>
-  Going responsive is typically the cheapest way for an application to target
-  as many screens as possible. Native apps require specialized platform skills
-  and are more expensive than responsive web sites. </p>
+  Going responsive is typically cheaper to deploy and develop than fully native
+  applications. Native apps require specialized platform skills
+  and are more expensive than responsive web sites. If the budget is small,
+  beginning with a mobile responive site and adding a native option later is
+  a sound strategy.</p>
 		<p>
-			<h3>Is the budget limited?</h3>
+			<h4>Is the budget limited?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q3Content'>
   <h1>Content Monitization</h1>
-  <p>Selling digital content and encouraging micro-purchases is a proven way to
-  monitize app engagement. Native in-app purchases are easier to integrate and cheaper to maintain than
-building a full-scale E-commerce system.</p>
+  <p>Monitizing digital content and encouraging micro-transactions are best
+  handled via a native platform. Native in-app purchases are easier to integrate
+  and cheaper to maintain than a full-scale web E-commerce system.</p>
 		<p>
-			<h3>Monitizing content ?</h3>
+    <h4>Monitizing digital content?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
+
 <script type='text/template' id='q4Content'>
   <h1>Rich Data Creation</h1>
-		<p>Are you recording movies, video</p>
+  <p>Users love apps that allow them to express their creativity through
+  original works of art; take pictures record video, and compose music! Native devices
+  include special processing power to capture and manipulate digital media.
+  If your app requires these features, the best user experience for rich data creation is native.</p>
 		<p>
-			<h3> Doing stuff with data?</h3>
+			<h4>Does your app require rich data creation?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q5Content'>
-  <h1>Frequent Updates</h1>
-  <p>Frequent updates can be a pain in the ass for native and could 
-  require approval on some platforms. Are you sure you need this headache?</p>
+  <h1>Updates</h1>
+  <p>Frequent content updates (new apartment listings?) or other data may be
+  necessary to keep the application meaningful.Updating web based applications is very easy, and
+  also makes updates instantly available to all users. Native apps may
+  require approval from specific app stores which drags out the update process.
+  Once the update is made available, users must also manually update the app.</p>
 		<p>
-			<h3>Frequent updates yo?</h3>
+			<h4>Frequent Updates?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q6Content'>
   <h1>App Purpose</h1>
-		<p>Does the app provide data about a real service, such as used cars,
-    planes or whatever. Or is the application itself the item of value?</p>
+		<p>If the app itself is the digital good which your company produces as a
+    primary product, native offers the best user experience and tightest
+    platform integration. If the application is not the primary product and is
+    instead used as a conduit for business ie - used car sales, airline app,
+    etc than responsive web may be a better business choice.</p>
 		<p>
-			<h3>Is the app the item for sale ?</h3>
+			<h4>Application primary product?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q7Content'>
-  <h1>What is for sale?</h1>
-  <p>Is the app the thing that is for sale?</p>
+  <h1>Push Notifications?</h1>
+		<p>Push notifications are not available from responsive web pages. The user
+    must have the website open on their device to receive new data. Pushing data down
+    to the user while the phone is in pocket or purse is a feature only available to
+    native apps.</p>
 		<p>
-			<h3></h3>
+			<h4>Business depend on push notifications?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q8Content'>
-  <h1>Push Notifications?</h1>
-		<p>Push notifications are not available via web (yet). This feature of
-    activly pushing data whether it be a plane ticket or annoucement can only
-    be done via native.</p>
+  <h1>Accessibility</h1>
+		<p>If your app has strict accessibility requirements, responsive web allows
+    content to be accesible on any device with a web browser. That means
+    basically every computer,tablet and smartphone now, and for the forseeable
+    future.</p>
 		<p>
-			<h3>Dependent on push notifications?</h3>
+			<h4>Universal accessibility important?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
 <script type='text/template' id='q9Content'>
-  <h1>Accessibility</h1>
-		<p>Does app experience depend on being available on as many screens and
-    devices as it can? </p>
+  <h1>User Interface</h1>
+		<p>A dynamic user interface with many fast moving animations or
+    visualizations is possible with current web technologies, but performance
+    and consistency across all devices can be a challenge. Native platforms are
+    better suited because of specialized graphics processing power and ensure consistent,
+    fast animation.</p>
 		<p>
-			<h3>Universal accessibility very important?</h3>
+			<h4>Complex user interface?</h4>
+      <div class='buttons'>
 			  <button>NO</button>
 			  <button>YES</button>
+      </div>
 		</p>
 </script>
 
@@ -141,7 +167,7 @@ building a full-scale E-commerce system.</p>
   <h1>What to do?</h1>
 		<p>Good luck! We hope your dev efforts work out!</p>
 		<p>
-			<h3>Thanks for using the tool!</h3>
+			<h4>Thanks for using the tool!</h4>
 		</p>
 </script>
 
@@ -160,12 +186,11 @@ building a full-scale E-commerce system.</p>
 	  <li id="q5">Updates</li>
 	  <li id="q6">Purpose</li>
 	  <li id="q7">Notify</li>
-	  <li id="q8">Product</li>
-	  <li id="q9">Accessibility</li>
+    <li id="q8">Accessibility</li>
+    <li id="q9">UI</li>
     <li id="q10">Result</li>
 	  </ul>
 	 </div>
-	
 	
 	<main class = "twelve columns offset-by-one" id="questionContent">
 		
@@ -180,7 +205,6 @@ building a full-scale E-commerce system.</p>
 			makes us human. To fail is to be human. To human is to fail. To flail is to not swim. </p>
 		 
 		<p>
-			<h3></h3>
 			  <button>Let's GO</button>
 		</p>
 	</div>
