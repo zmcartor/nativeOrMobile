@@ -5,7 +5,6 @@ $(function(){
       responsiveBucket = 0;
 
   var computeResult = function(){
-    debugger;
     var finalContent;
     if (nativeBucket > responsiveBucket) finalContent = $('#finalNative').html();
     else if (nativeBucket < responsiveBucket) finalContent = $('#finalResponsive').html();
