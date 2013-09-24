@@ -2,8 +2,24 @@
 	float:left;
 }
 
+.past {
+  color: #afafaf;
+}
+
 .activeQuestion {
-  background-color:yellow;
+  background-color:#FFDC38;
+}
+
+.redColor{
+  color: #fe2663;
+}
+
+.purpleColor{
+  color: #e232df;
+}
+
+.orangeColor{
+  color: #F89F35;
 }
 
 p {

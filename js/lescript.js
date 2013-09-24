@@ -18,7 +18,7 @@ $('main').delegate('button','click',function(e){
   else if(bucket ==='n') nativeBucket+=1;
   if (currentQuestion === questionCount) computeResult();
   else $('main').hide().empty().html($('#q'+currentQuestion+'Content').html()).fadeIn();
-  $('li.activeQuestion').removeClass('activeQuestion');
+  $('li.activeQuestion').removeClass('activeQuestion').addClass('past');
   $('li#q'+currentQuestion).addClass('activeQuestion');
 });
 });
