@@ -22,7 +22,9 @@
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/custom.css">
-  
+
+    <script type='text/javascript' id='lt_ws' src='http://localhost:49220/socket.io/lighttable/ws.js'></script>
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,7 +49,7 @@
   beginning with a mobile responive site and adding a native option later is
   a sound strategy.</p>
 		<p>
-			<h4>Is the budget limited?</h4>
+			<h4>Is the budget limited at least $5,000 ?</h4>
       <div class='buttons'>
 			  <button data-bucket="n">NO</button>
 			  <button data-bucket="r">YES</button>
@@ -205,16 +207,19 @@
     </ul>
 		</p>
 
-    <p class='orangeColor'>More questions or like to discuss your next app with a real person?
+    <p class='orangeColor'>More questions or like to discuss your next app with
+    a real person?<br>
     <a href="https://twitter.com/zmcartor" target='_blank'>Drop me a line on Twitter @zmcartor.</a></p>
 </script>
 
 <script type='text/template' id='finalNative'>
   <h1>Native</h1>
-		<p>Building your app as fully native will best meet your business
-    needs. Native is awesome and costs a lot of money wahooo!</p>
+		<p>Your app would best be served on a native platform. Picking which native
+    platform is a decision best made with market research regarding which
+    native platform is favored amoungst your target audience.</p>
 
-    <p class='orangeColor'>More questions or like to discuss your next app with a real person?
+    <p class='orangeColor'>More questions or like to discuss your next app with
+    a real person? <br>
     <a href="https://twitter.com/zmcartor" target='_blank'>Drop me a line on Twitter
       @zmcartor.</a></p>
 </script>
@@ -241,9 +246,9 @@
     <li id="q11">Result</li>
   </ul>
 	 </div>
-	
+
 	<main class = "twelve columns offset-by-one" id="questionContent">
-		
+
 		<h1>Responsive Web or Native?</h1>
 		<p>Your business requires a mobile experience, but what is the best way to
     present your content? How do you know which platform is best given budget
